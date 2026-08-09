@@ -45,13 +45,13 @@ int main(){
 //  * 
 
      for(int i=0; i<n; i++){
-            cout<<" - ";
         for( int j=n-1; j>=i; j--){
-            cout<<" * ";
+            cout<<"- ";
         }
+        for(int k=0; k<=i; k++){
+            cout<<" *";
+        }
+        
         cout<<endl;
     }
-
-
-
 }
