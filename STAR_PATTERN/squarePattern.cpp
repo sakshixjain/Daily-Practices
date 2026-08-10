@@ -41,14 +41,80 @@ int main(){
 // *****
 
 
-for(int i=1; i<=n; i++){
-    for(int j=1; j<=n; j++){
-        if(j==1 ||j==n || i==1 || i==n){
-            cout<<"*";
-        }else{
-            cout<<" ";
-        } 
+// for(int i=1; i<=n; i++){
+//     for(int j=1; j<=n; j++){
+//         if(j==1 ||j==n || i==1 || i==n){
+//             cout<<"*";
+//         }else{
+//             cout<<" ";
+//         } 
+//     }
+//     cout<<endl;
+// }
+
+
+// *****
+// *   *
+// *   *
+// *   *
+// *****
+
+
+// for(int i=1; i<=n; i++){
+//    for(int j=n; j>=i; j--){
+//            cout<<" ";
+//    }
+
+//      for(int k=1; k<=i; k++ ){
+//          if( k==i  || k==1  || i==n ){
+//                 cout<<"*";
+//             }
+//             else{
+//                 cout<<" ";
+//             }
+//      }
+
+//     cout<<endl;              
+// }
+
+
+
+//      *
+//     **
+//    * *
+//   *  *
+//  *****
+
+
+// for(int i=1; i<=n; i++){
+//     for(int j=1; j<=i; j++){
+//         cout<<" ";
+//     }
+//     for(int k=n; k>=i; k--){
+//         if(k==n || k==i ||i==1){
+//             cout<<"*";
+//         }
+//         else{
+//             cout<<" ";
+//         }
+//     }
+//     cout<<endl;
+// }
+
+//  *****
+//   *  *
+//    * *
+//     **
+//      *
+
+for(int i=0; i<n; i++){
+    for(int j=0; j<n-i; j++){
+       cout<<" ";
+    }
+    for(int k=0; k<2*i-1; k++){
+       cout<<"*";
     }
     cout<<endl;
 }
-}
+
+}  
